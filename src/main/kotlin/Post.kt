@@ -2,9 +2,11 @@ data class Post(
     val text: String,
     val authorName: String,
     val date: Int,
-    val signerId : Int? = null,
+    val attachment: Array<Attachment> = emptyArray(),
+    val signerId: Int? = null,
     val id: Int = 0,
 )
+
 
 object WallService {
     private var nextId = 0
