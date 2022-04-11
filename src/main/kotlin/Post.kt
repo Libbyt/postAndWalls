@@ -2,6 +2,7 @@ data class Post(
     val text: String,
     val authorName: String,
     val date: Int,
+    val signerId : Int? = null,
     val id: Int = 0,
 )
 
